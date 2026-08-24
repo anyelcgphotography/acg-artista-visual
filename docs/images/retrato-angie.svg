@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+	<defs>
+		<linearGradient id="cielo-retrato-angie" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#121212"/>
+			<stop offset=".55" stop-color="#2c211a"/>
+			<stop offset="1" stop-color="#8a5228"/>
+		</linearGradient>
+		<radialGradient id="sol-retrato-angie" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#ffd6a8" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#ffd6a8" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-retrato-angie" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-retrato-angie">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1000" height="1250" fill="url(#cielo-retrato-angie)"/>
+	<circle cx="620.0" cy="350.0" r="390.0" fill="url(#sol-retrato-angie)"/>
+	<circle cx="620.0" cy="350.0" r="63.0" fill="#ffd6a8" opacity=".85"/>
+	
+	
+	<rect y="1025.0" width="1000" height="225.0" fill="#0a0a0a"/>
+	<g fill="#050505">
+				<circle cx="480.0" cy="565.0" r="138.0"/>
+				<path d="M217.8 1250
+					C231.6 716.8
+					 355.8 668.5
+					 480.0 668.5
+					C604.2 668.5
+					 728.4 716.8
+					 742.2 1250 Z"/>
+				<rect x="404.1" y="542.9" width="151.8" height="99.4" rx="16.6" fill="#fa6613"/>
+				<circle cx="480.0" cy="592.6" r="33.1" fill="#050505"/>
+			</g>
+	<rect width="1000" height="1250" fill="url(#velo-retrato-angie)"/>
+	<rect width="1000" height="1250" filter="url(#grano-retrato-angie)" opacity=".05"/>
+</svg>

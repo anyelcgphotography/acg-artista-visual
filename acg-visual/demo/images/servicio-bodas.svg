@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img">
+	<defs>
+		<linearGradient id="cielo-servicio-bodas" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#1b1310"/>
+			<stop offset=".55" stop-color="#5c3018"/>
+			<stop offset="1" stop-color="#d17a34"/>
+		</linearGradient>
+		<radialGradient id="sol-servicio-bodas" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#ffc48a" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#ffc48a" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-servicio-bodas" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-servicio-bodas">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1200" height="900" fill="url(#cielo-servicio-bodas)"/>
+	<circle cx="864.0" cy="378.0" r="280.8" fill="url(#sol-servicio-bodas)"/>
+	<circle cx="864.0" cy="378.0" r="45.4" fill="#ffc48a" opacity=".85"/>
+	
+	
+	<rect y="738.0" width="1200" height="162.0" fill="#0d0a08"/>
+	<g fill="#050505">
+		<circle cx="389.1" cy="376.2" r="31.5"/>
+		<path d="M330.1 738.0
+			C330.1 500.1
+			 339.6 407.6
+			 389.1 407.6
+			C438.7 407.6
+			 448.1 500.1
+			 448.1 738.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="522.9" cy="397.9" r="29.6"/>
+		<path d="M467.4 738.0
+			C467.4 514.4
+			 476.3 427.5
+			 522.9 427.5
+			C569.4 427.5
+			 578.3 514.4
+			 578.3 738.0 Z"/>
+	</g>
+	<rect width="1200" height="900" fill="url(#velo-servicio-bodas)"/>
+	<rect width="1200" height="900" filter="url(#grano-servicio-bodas)" opacity=".05"/>
+</svg>

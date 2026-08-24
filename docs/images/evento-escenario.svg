@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000" role="img">
+	<defs>
+		<linearGradient id="cielo-evento-escenario" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#0a0a0f"/>
+			<stop offset=".55" stop-color="#1e1230"/>
+			<stop offset="1" stop-color="#5b2a55"/>
+		</linearGradient>
+		<radialGradient id="sol-evento-escenario" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#ff9ad2" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#ff9ad2" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-evento-escenario" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-evento-escenario">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1500" height="1000" fill="url(#cielo-evento-escenario)"/>
+	<circle cx="750.0" cy="280.0" r="507.0" fill="url(#sol-evento-escenario)"/>
+	<circle cx="750.0" cy="280.0" r="81.9" fill="#ff9ad2" opacity=".85"/>
+	<g opacity=".22">
+			<path d="M450.0 0 L180.0 820.0 L600.0 820.0 Z" fill="#ffd9f2"/>
+			<path d="M1050.0 0 L900.0 820.0 L1380.0 820.0 Z" fill="#cfe0ff"/>
+		</g>
+	
+	<rect y="820.0" width="1500" height="180.0" fill="#09090c"/>
+	<g fill="#050505">
+		<circle cx="421.1" cy="544.4" r="24.0"/>
+		<path d="M376.2 820.0
+			C376.2 638.8
+			 383.4 568.4
+			 421.1 568.4
+			C458.8 568.4
+			 466.0 638.8
+			 466.0 820.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="552.7" cy="484.8" r="29.1"/>
+		<path d="M498.0 820.0
+			C498.0 599.7
+			 506.8 514.0
+			 552.7 514.0
+			C598.6 514.0
+			 607.3 599.7
+			 607.3 820.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="684.2" cy="447.6" r="32.4"/>
+		<path d="M623.5 820.0
+			C623.5 575.2
+			 633.2 480.0
+			 684.2 480.0
+			C735.2 480.0
+			 744.9 575.2
+			 744.9 820.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="815.8" cy="499.7" r="27.9"/>
+		<path d="M763.6 820.0
+			C763.6 609.5
+			 771.9 527.6
+			 815.8 527.6
+			C859.6 527.6
+			 868.0 609.5
+			 868.0 820.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="947.3" cy="559.3" r="22.7"/>
+		<path d="M904.8 820.0
+			C904.8 648.6
+			 911.6 582.0
+			 947.3 582.0
+			C983.0 582.0
+			 989.8 648.6
+			 989.8 820.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="1078.9" cy="522.1" r="25.9"/>
+		<path d="M1030.3 820.0
+			C1030.3 624.1
+			 1038.1 548.0
+			 1078.9 548.0
+			C1119.7 548.0
+			 1127.5 624.1
+			 1127.5 820.0 Z"/>
+	</g>
+	<rect width="1500" height="1000" fill="url(#velo-evento-escenario)"/>
+	<rect width="1500" height="1000" filter="url(#grano-evento-escenario)" opacity=".05"/>
+</svg>

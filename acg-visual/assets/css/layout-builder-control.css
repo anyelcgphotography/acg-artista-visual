@@ -1,0 +1,167 @@
+/**
+ * Estilos del control «Diseñador de cabecera/pie» dentro del panel de
+ * controles del Personalizador. Solo se carga ahí (ver Adry_Layout_Control::
+ * enqueue() en inc/layout-builder.php); el front del sitio no lo descarga.
+ */
+
+.acg-layout-builder {
+	--acg-lb-border: #dcdcde;
+	--acg-lb-bg: #f6f7f7;
+	--acg-lb-accent: #2271b1;
+	margin-top: 8px;
+}
+
+.acg-lb-palette {
+	margin-bottom: 14px;
+	padding: 10px;
+	border: 1px dashed var(--acg-lb-border);
+	border-radius: 6px;
+	background: var(--acg-lb-bg);
+}
+
+.acg-lb-palette__title {
+	margin: 0 0 6px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	color: #50575e;
+}
+
+.acg-lb-palette__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	min-height: 20px;
+}
+
+.acg-lb-palette__vacia {
+	font-size: 11px;
+	font-style: italic;
+	color: #8c8f94;
+}
+
+.acg-lb-row {
+	margin-bottom: 14px;
+}
+
+.acg-lb-row__title {
+	margin: 0 0 6px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.acg-lb-row__zones {
+	display: grid;
+	grid-template-columns: repeat( 3, 1fr );
+	gap: 8px;
+}
+
+.acg-lb-zone {
+	border: 1px solid var(--acg-lb-border);
+	border-radius: 6px;
+	padding: 6px;
+	background: #fff;
+}
+
+.acg-lb-zone__title {
+	margin: 0 0 6px;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	color: #8c8f94;
+	text-align: center;
+}
+
+.acg-lb-zone__items {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-height: 44px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-radius: 4px;
+	transition: background-color .15s ease, border-color .15s ease;
+}
+
+.acg-lb-zone__items.is-empty {
+	align-items: center;
+	justify-content: center;
+	border: 1px dashed var(--acg-lb-border);
+}
+
+.acg-lb-zone__items.is-empty::before {
+	content: attr(data-placeholder);
+	font-size: 11px;
+	color: #8c8f94;
+	text-align: center;
+	padding: 10px 4px;
+}
+
+.acg-lb-zone__items.is-target {
+	background: #e7f3fc;
+	border-color: var(--acg-lb-accent);
+}
+
+.acg-lb-chip {
+	border: 1px solid var(--acg-lb-border);
+	border-radius: 4px;
+	padding: 6px 8px;
+	background: #fdfdfe;
+	font-size: 12px;
+	cursor: grab;
+}
+
+.acg-lb-chip--source {
+	background: #fff;
+}
+
+.acg-lb-chip:active {
+	cursor: grabbing;
+}
+
+.acg-lb-chip__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6px;
+}
+
+.acg-lb-chip__label {
+	font-weight: 500;
+	color: #1d2327;
+}
+
+.acg-lb-chip__remove {
+	border: 0;
+	background: none;
+	color: #b32d2e;
+	font-size: 16px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0 2px;
+}
+
+.acg-lb-chip__remove:hover {
+	color: #8a2424;
+}
+
+.acg-lb-chip__text {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 6px;
+	font-size: 11px;
+	resize: vertical;
+}
+
+@media (max-width: 380px) {
+	.acg-lb-row__zones {
+		grid-template-columns: 1fr;
+	}
+}

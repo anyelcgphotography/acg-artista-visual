@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+	<defs>
+		<linearGradient id="cielo-evento-corporativo" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#0b1016"/>
+			<stop offset=".55" stop-color="#16283a"/>
+			<stop offset="1" stop-color="#2f5b7e"/>
+		</linearGradient>
+		<radialGradient id="sol-evento-corporativo" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#cfe6ff" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#cfe6ff" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-evento-corporativo" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-evento-corporativo">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1000" height="1250" fill="url(#cielo-evento-corporativo)"/>
+	<circle cx="700.0" cy="375.0" r="182.0" fill="url(#sol-evento-corporativo)"/>
+	<circle cx="700.0" cy="375.0" r="29.4" fill="#cfe6ff" opacity=".85"/>
+	
+	
+	<rect y="1025.0" width="1000" height="225.0" fill="#080b0e"/>
+	<g fill="#050505">
+		<circle cx="126.3" cy="711.8" r="27.2"/>
+		<path d="M75.2 1025.0
+			C75.2 819.1
+			 83.4 739.1
+			 126.3 739.1
+			C169.1 739.1
+			 177.3 819.1
+			 177.3 1025.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="275.8" cy="644.1" r="33.1"/>
+		<path d="M213.7 1025.0
+			C213.7 774.6
+			 223.6 677.2
+			 275.8 677.2
+			C327.9 677.2
+			 337.9 774.6
+			 337.9 1025.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="425.3" cy="601.8" r="36.8"/>
+		<path d="M356.3 1025.0
+			C356.3 746.8
+			 367.3 638.6
+			 425.3 638.6
+			C483.2 638.6
+			 494.3 746.8
+			 494.3 1025.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="574.8" cy="661.0" r="31.6"/>
+		<path d="M515.4 1025.0
+			C515.4 785.7
+			 524.9 692.7
+			 574.8 692.7
+			C624.6 692.7
+			 634.1 785.7
+			 634.1 1025.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="724.3" cy="728.8" r="25.8"/>
+		<path d="M676.0 1025.0
+			C676.0 830.3
+			 683.7 754.5
+			 724.3 754.5
+			C764.8 754.5
+			 772.5 830.3
+			 772.5 1025.0 Z"/>
+	</g><g fill="#050505">
+		<circle cx="873.8" cy="686.4" r="29.4"/>
+		<path d="M818.5 1025.0
+			C818.5 802.4
+			 827.4 715.9
+			 873.8 715.9
+			C920.1 715.9
+			 929.0 802.4
+			 929.0 1025.0 Z"/>
+	</g>
+	<rect width="1000" height="1250" fill="url(#velo-evento-corporativo)"/>
+	<rect width="1000" height="1250" filter="url(#grano-evento-corporativo)" opacity=".05"/>
+</svg>

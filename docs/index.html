@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACG Artista Visual — maqueta del theme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css?v=1787610904025">
+<!--
+	Maqueta para revisar el theme sin WordPress.
+
+	Usa el CSS y el JS REALES del theme y repite su marcado, así que lo que se
+	ve aquí es lo que se renderiza en el sitio. Lo único escrito a mano son las
+	variables de color de abajo: en WordPress las calcula acg_css_variables()
+	en PHP a partir de la paleta del Personalizador, y estas son exactamente
+	las que salen con la paleta de fábrica.
+-->
+<style>
+:root{
+	--acg-acento:#fa6613;
+	--acg-acento-hover:#fb8847;
+	--acg-acento-hondo:#b4490e;
+	--acg-oscuro:#0a0a0a;
+	--acg-claro:#e1e1e1;
+	--acg-tinta:#000000;
+	--acg-superficie:#111111;
+	--acg-sobre-acento:#000000;
+	--acg-max:1240px;
+	--acg-gutter:clamp(18px, 4vw, 56px);
+	--acg-seccion-y:clamp(70px, 11vh, 140px);
+	--acg-fuente-titulo:Livvic, 'TT Norms', 'Helvetica Neue', Arial, sans-serif;
+	--acg-fuente-texto:Manrope, 'TT Norms', Livvic, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+.acg-esquema--oscuro,body{
+	--sec-bg:#0a0a0a;--sec-fg:#ffffff;--sec-texto:rgba(225,225,225,.78);--sec-suave:rgba(225,225,225,.55);
+	--sec-borde:rgba(225,225,225,.14);--sec-card:#111111;--sec-acento:#fa6613;--sec-input:#191919;
+}
+.acg-esquema--claro{
+	--sec-bg:#e1e1e1;--sec-fg:#000000;--sec-texto:rgba(0,0,0,.7);--sec-suave:rgba(0,0,0,.55);
+	--sec-borde:rgba(0,0,0,.18);--sec-card:#ededed;--sec-acento:#e15c11;--sec-input:#ffffff;
+}
+.acg-esquema--acento{
+	--sec-bg:#fa6613;--sec-fg:#000000;--sec-texto:rgba(0,0,0,.78);--sec-suave:rgba(0,0,0,.6);
+	--sec-borde:rgba(0,0,0,.28);--sec-card:#fb7b34;--sec-acento:#000000;--sec-input:#ffffff;
+}
+</style>
+</head>
+<body class="acg-header-fija">
+
+<a class="acg-skip" href="#contenido">Saltar al contenido</a>
+
+<header class="acg-header" id="acg-header">
+	<div class="acg-builder-row acg-builder-row--header acg-builder-row--principal">
+		<div class="acg-builder-zone acg-builder-zone--izquierda">
+			<a class="acg-marca acg-marca--header" href="#top" rel="home">
+				<svg class="acg-monograma" viewBox="0 0 100 100" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="square" aria-hidden="true"><path d="M8 42V30L50 6l42 24v12"/><path d="M8 58v12l42 24 42-24V58"/></svg>
+				<span class="acg-marca__texto">
+					<span class="acg-marca__nombre">ACG</span>
+					<span class="acg-marca__sub">ARTISTA VISUAL</span>
+				</span>
+			</a>
+		</div>
+		<nav class="acg-nav acg-builder-zone acg-builder-zone--centro" id="acg-navegacion" aria-label="Menú principal">
+			<ul class="acg-nav__lista">
+				<li><a href="#portafolio">Portafolio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#sobre">Sobre mí</a></li>
+				<li><a href="#proceso">Proceso</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+		<div class="acg-builder-zone acg-builder-zone--derecha">
+			<div class="acg-lang" role="group" aria-label="Idioma">
+				<a class="acg-lang__btn is-active" href="?lang=es" hreflang="es">ES</a>
+				<a class="acg-lang__btn" href="?lang=pt" hreflang="pt">PT</a>
+			</div>
+			<a class="acg-btn acg-btn--acento acg-btn--sm" href="https://wa.me/5516992193838" target="_blank" rel="noopener">
+				<svg class="acg-icono" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8 8 0 1 1 8 19.4z"/><path d="M8.8 9.2c.3 2.6 3.4 5.4 5.9 5.7.7.1 1.4-.6 1.5-1.3l-2-.9-1 1c-1-.5-2-1.4-2.5-2.5l1-1-.9-2c-.7.1-1.4.7-1.3 1.5z"/></svg>WhatsApp
+			</a>
+			<button class="acg-burger" type="button" aria-expanded="false" aria-controls="acg-menu-movil" aria-label="Abrir el menú"><span></span><span></span><span></span></button>
+		</div>
+	</div>
+</header>
+
+<div class="acg-menu-movil" id="acg-menu-movil" hidden>
+	<div class="acg-menu-movil__interior">
+		<ul class="acg-menu-movil__lista">
+			<li><a href="#portafolio">Portafolio</a></li>
+			<li><a href="#servicios">Servicios</a></li>
+			<li><a href="#sobre">Sobre mí</a></li>
+			<li><a href="#proceso">Proceso</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+		<div class="acg-lang"><a class="acg-lang__btn is-active" href="#">ES</a><a class="acg-lang__btn" href="#">PT</a></div>
+		<ul class="acg-contacto-info">
+			<li><span>+55 16 99219 3838</span></li>
+			<li><span>São Paulo · BR</span></li>
+		</ul>
+	</div>
+</div>
+
+<main id="contenido" class="acg-main">
+
+<header id="inicio" class="acg-hero acg-esquema--oscuro">
+	<div class="acg-hero__fondo">
+		<img class="acg-hero__img" src="images/acg-hero.svg" alt="">
+		<span class="acg-hero__velo" aria-hidden="true"></span>
+	</div>
+	<div class="acg-hero__interior">
+		<p class="acg-hero__epigrafe"><span class="acg-hero__linea" aria-hidden="true"></span>ANYEL C. GONZÁLEZ · ARTISTA VISUAL</p>
+		<h1 class="acg-hero__titulo">Bodas y eventos, fotografiados sin interrumpirlos.</h1>
+		<p class="acg-hero__texto">Cobertura documental de bodas, eventos y marca personal. Retrato, producto y naturaleza por encargo.</p>
+		<div class="acg-hero__botones">
+			<a class="acg-btn acg-btn--acento" href="#contacto">Pedir presupuesto <svg class="acg-icono" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+			<a class="acg-btn acg-btn--linea" href="#portafolio">Ver portafolio</a>
+		</div>
+	</div>
+	<div class="acg-hero__pie">
+		<span class="acg-hero__estado"><span class="acg-punto" aria-hidden="true"></span>AGENDA ABIERTA</span>
+		<a href="tel:+5516992193838">+55 16 99219 3838</a>
+	</div>
+</header>
+
+<div class="acg-marquesina acg-esquema--acento" aria-hidden="true">
+	<div class="acg-marquesina__pista">
+		<span class="acg-marquesina__grupo">BODAS · EVENTOS · MARCA PERSONAL · RETRATO · PRODUCTO · NATURALEZA · MASCOTAS · DEPORTE · STOCK · </span>
+		<span class="acg-marquesina__grupo">BODAS · EVENTOS · MARCA PERSONAL · RETRATO · PRODUCTO · NATURALEZA · MASCOTAS · DEPORTE · STOCK · </span>
+	</div>
+</div>
+
+<section id="portafolio" class="acg-seccion acg-seccion--portafolio acg-esquema--claro">
+	<div class="acg-contenedor">
+		<div class="acg-seccion__cabecera">
+			<div>
+				<p class="acg-epigrafe"><span class="acg-epigrafe__num">01</span> — PORTAFOLIO</p>
+				<h2 class="acg-titulo">Trabajo reciente</h2>
+			</div>
+			<p class="acg-seccion__intro">Cada entrega se edita en un mismo tono: color fiel, contraste medido, nada de filtros que caduquen.</p>
+		</div>
+
+		<div class="acg-filtros" data-acg-filtros hidden>
+			<button type="button" class="acg-chip is-active" data-filtro="all">Todo</button>
+			<button type="button" class="acg-chip" data-filtro="bodas">Bodas</button>
+			<button type="button" class="acg-chip" data-filtro="eventos">Eventos</button>
+			<button type="button" class="acg-chip" data-filtro="marca">Marca personal</button>
+			<button type="button" class="acg-chip" data-filtro="retrato">Retrato</button>
+		</div>
+
+		<div class="acg-mosaico" style="--acg-cols: 3;" data-acg-mosaico>
+			<figure class="acg-tarjeta-foto acg-tarjeta-foto--ancha" style="aspect-ratio: 3 / 2;" data-categorias="bodas">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/boda-ceremonia.svg" alt="Ceremonia"></a>
+				<figcaption class="acg-tarjeta-foto__pie">BODA · 01</figcaption>
+			</figure>
+			<figure class="acg-tarjeta-foto" style="aspect-ratio: 4 / 5;" data-categorias="bodas">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/boda-detalle.svg" alt="Detalle"></a>
+				<figcaption class="acg-tarjeta-foto__pie">BODA · 02</figcaption>
+			</figure>
+			<figure class="acg-tarjeta-foto" style="aspect-ratio: 4 / 5;" data-categorias="eventos">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/evento-corporativo.svg" alt="Evento"></a>
+				<figcaption class="acg-tarjeta-foto__pie">EVENTO · 01</figcaption>
+			</figure>
+			<figure class="acg-tarjeta-foto" style="aspect-ratio: 4 / 5;" data-categorias="marca">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/marca-personal.svg" alt="Marca personal"></a>
+				<figcaption class="acg-tarjeta-foto__pie">MARCA PERSONAL · 01</figcaption>
+			</figure>
+			<figure class="acg-tarjeta-foto acg-tarjeta-foto--ancha" style="aspect-ratio: 3 / 2;" data-categorias="eventos">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/evento-escenario.svg" alt="Escenario"></a>
+				<figcaption class="acg-tarjeta-foto__pie">EVENTO · 02</figcaption>
+			</figure>
+			<figure class="acg-tarjeta-foto" style="aspect-ratio: 4 / 5;" data-categorias="retrato">
+				<a href="#" class="acg-tarjeta-foto__enlace"><img class="acg-thumb" src="images/retrato-natural.svg" alt="Retrato"></a>
+				<figcaption class="acg-tarjeta-foto__pie">RETRATO · 01</figcaption>
+			</figure>
+		</div>
+
+		<p class="acg-mosaico__vacio" data-acg-vacio hidden>No hay nada por aquí todavía.</p>
+
+		<div class="acg-mosaico__pie">
+			<span class="acg-raya" aria-hidden="true"></span>
+			<a class="acg-enlace-sub" href="#">Portafolio</a>
+			<a class="acg-enlace-sub" href="#">Más en Instagram</a>
+		</div>
+	</div>
+</section>
+
+<section id="servicios" class="acg-seccion acg-seccion--servicios acg-esquema--oscuro">
+	<div class="acg-contenedor">
+		<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+			<div>
+				<p class="acg-epigrafe"><span class="acg-epigrafe__num">02</span> — SERVICIOS</p>
+				<h2 class="acg-titulo">Tres coberturas principales</h2>
+			</div>
+		</div>
+
+		<div class="acg-servicios">
+			<article class="acg-servicio">
+				<a class="acg-servicio__media" href="#" tabindex="-1" aria-hidden="true"><img class="acg-thumb" src="images/servicio-bodas.svg" alt=""></a>
+				<div class="acg-servicio__cuerpo">
+					<h3 class="acg-servicio__titulo"><a href="#">Bodas</a></h3>
+					<p class="acg-servicio__texto">Preparativos, ceremonia y fiesta. Cobertura continua con flash disponible para el interior y la noche.</p>
+					<p class="acg-servicio__nota">Presupuesto a medida</p>
+				</div>
+			</article>
+			<article class="acg-servicio">
+				<a class="acg-servicio__media" href="#" tabindex="-1" aria-hidden="true"><img class="acg-thumb" src="images/servicio-eventos.svg" alt=""></a>
+				<div class="acg-servicio__cuerpo">
+					<h3 class="acg-servicio__titulo"><a href="#">Eventos</a></h3>
+					<p class="acg-servicio__texto">Corporativos, culturales y deportivos. Registro de momentos, retratos rápidos y material listo para prensa o redes.</p>
+					<p class="acg-servicio__nota">Por horas o jornada</p>
+				</div>
+			</article>
+			<article class="acg-servicio">
+				<a class="acg-servicio__media" href="#" tabindex="-1" aria-hidden="true"><img class="acg-thumb" src="images/servicio-marca.svg" alt=""></a>
+				<div class="acg-servicio__cuerpo">
+					<h3 class="acg-servicio__titulo"><a href="#">Marca personal</a></h3>
+					<p class="acg-servicio__texto">Retratos y escenas de trabajo para perfiles profesionales, webs y campañas. Varios encuadres por sesión.</p>
+					<p class="acg-servicio__nota">Sesión de 1 a 3 h</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="acg-encargos">
+			<p class="acg-encargos__titulo">También por encargo</p>
+			<ul class="acg-encargos__lista">
+				<li>Retratos fotográficos</li>
+				<li>Fotografía de productos</li>
+				<li>Fotografía de deportes</li>
+				<li>Fotografía de naturaleza</li>
+				<li>Fotografía de stock</li>
+				<li>Fotografía de restaurantes</li>
+				<li>Primeros planos / macro</li>
+				<li>Fotografía de mascotas</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section id="sobre" class="acg-seccion acg-seccion--sobre acg-esquema--claro">
+	<div class="acg-contenedor acg-sobre">
+		<div class="acg-sobre__media">
+			<div class="acg-sobre__marco"><img class="acg-thumb" src="images/retrato-angie.svg" alt="Anyel C. González"></div>
+			<span class="acg-sobre__hexagono" aria-hidden="true"><svg class="acg-monograma" viewBox="0 0 100 100" width="120" height="120" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="square"><path d="M8 42V30L50 6l42 24v12"/><path d="M8 58v12l42 24 42-24V58"/></svg></span>
+		</div>
+		<div class="acg-sobre__texto">
+			<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+				<div>
+					<p class="acg-epigrafe"><span class="acg-epigrafe__num">03</span> — SOBRE MÍ</p>
+					<h2 class="acg-titulo">Anyel C. González</h2>
+				</div>
+			</div>
+			<div class="acg-prosa">
+				<p>Soy fotógrafa y artista visual. Trabajo sobre todo con bodas, eventos y marca personal, y me interesa el registro honesto: gente cómoda, luz real, poca dirección.</p>
+				<p>Cubro también producto, naturaleza, mascotas y deporte cuando el encargo lo pide. Antes de cada trabajo hablamos del lugar, la luz y el ritmo del día.</p>
+			</div>
+			<div class="acg-sobre__enlaces">
+				<a class="acg-btn acg-btn--linea acg-btn--sm" href="#">Instagram</a>
+				<a class="acg-btn acg-btn--linea acg-btn--sm" href="#">LinkedIn</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="proceso" class="acg-seccion acg-seccion--proceso acg-esquema--oscuro">
+	<div class="acg-contenedor">
+		<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+			<div>
+				<p class="acg-epigrafe"><span class="acg-epigrafe__num">04</span> — PROCESO</p>
+				<h2 class="acg-titulo">Cómo trabajamos</h2>
+			</div>
+		</div>
+		<ol class="acg-proceso">
+			<li class="acg-paso"><span class="acg-paso__num">01</span><h3 class="acg-paso__titulo">Conversación</h3><p class="acg-paso__texto">Me cuentas fecha, lugar y qué esperas de las fotos.</p></li>
+			<li class="acg-paso"><span class="acg-paso__num">02</span><h3 class="acg-paso__titulo">Propuesta</h3><p class="acg-paso__texto">Horas de cobertura, entregables y precio cerrado por escrito.</p></li>
+			<li class="acg-paso"><span class="acg-paso__num">03</span><h3 class="acg-paso__titulo">Sesión</h3><p class="acg-paso__texto">El día del trabajo. Poca dirección, mucha observación.</p></li>
+			<li class="acg-paso"><span class="acg-paso__num">04</span><h3 class="acg-paso__titulo">Entrega</h3><p class="acg-paso__texto">Selección editada en galería online, con descarga en alta.</p></li>
+		</ol>
+	</div>
+</section>
+
+<section class="acg-seccion acg-seccion--testimonios acg-esquema--claro">
+	<div class="acg-contenedor">
+		<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+			<div><p class="acg-epigrafe"><span class="acg-epigrafe__num">05</span> — CLIENTES</p></div>
+		</div>
+		<div class="acg-testimonios">
+			<blockquote class="acg-cita"><p class="acg-cita__texto">“Estuvo todo el día y casi no la notamos. Las fotos parecen recuerdos, no poses.”</p><footer class="acg-cita__autor">MARIANA &amp; TIAGO · BODA</footer></blockquote>
+			<blockquote class="acg-cita"><p class="acg-cita__texto">“Entregó el material a tiempo y con el encuadre que necesitábamos para prensa.”</p><footer class="acg-cita__autor">ESTÚDIO NORTE · EVENTO CORPORATIVO</footer></blockquote>
+			<blockquote class="acg-cita"><p class="acg-cita__texto">“Usé los retratos en mi web y en LinkedIn. Cambió por completo cómo me presento.”</p><footer class="acg-cita__autor">CARLA R. · MARCA PERSONAL</footer></blockquote>
+		</div>
+	</div>
+</section>
+
+<section class="acg-seccion acg-seccion--faq acg-esquema--claro">
+	<div class="acg-contenedor acg-contenedor--estrecho">
+		<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+			<div>
+				<p class="acg-epigrafe"><span class="acg-epigrafe__num">06</span> — PREGUNTAS FRECUENTES</p>
+				<h2 class="acg-titulo">Antes de escribir</h2>
+			</div>
+		</div>
+		<div class="acg-faq">
+			<details class="acg-faq__item">
+				<summary class="acg-faq__pregunta"><span>¿Cuánto tarda la entrega?</span><span class="acg-faq__signo" aria-hidden="true"></span></summary>
+				<div class="acg-faq__respuesta acg-prosa"><p>Un adelanto en 72 h y la galería completa entre 10 y 20 días según el tamaño del trabajo.</p></div>
+			</details>
+			<details class="acg-faq__item">
+				<summary class="acg-faq__pregunta"><span>¿Viajas fuera de la ciudad?</span><span class="acg-faq__signo" aria-hidden="true"></span></summary>
+				<div class="acg-faq__respuesta acg-prosa"><p>Sí. El desplazamiento se suma al presupuesto y se acuerda antes de reservar la fecha.</p></div>
+			</details>
+			<details class="acg-faq__item">
+				<summary class="acg-faq__pregunta"><span>¿Cómo se reserva la fecha?</span><span class="acg-faq__signo" aria-hidden="true"></span></summary>
+				<div class="acg-faq__respuesta acg-prosa"><p>Con una señal sobre el total. Hasta ese momento la fecha sigue abierta para otros clientes.</p></div>
+			</details>
+		</div>
+	</div>
+</section>
+
+<section id="contacto" class="acg-seccion acg-seccion--contacto acg-esquema--oscuro">
+	<div class="acg-contenedor acg-contacto">
+		<div class="acg-contacto__intro">
+			<div class="acg-seccion__cabecera acg-seccion__cabecera--apilada">
+				<div>
+					<p class="acg-epigrafe"><span class="acg-epigrafe__num">07</span> — CONTACTO</p>
+					<h2 class="acg-titulo">Cuéntame tu fecha</h2>
+				</div>
+			</div>
+			<p class="acg-contacto__texto">Respondo en menos de 24 h con disponibilidad y presupuesto. Si prefieres, escríbeme directo por WhatsApp.</p>
+			<ul class="acg-contacto__lista">
+				<li><a href="#"><span>WhatsApp</span><span class="acg-contacto__valor">+55 16 99219 3838</span></a></li>
+				<li><a href="#"><span>Instagram</span><span class="acg-contacto__valor">anyelcg_photography</span></a></li>
+				<li><a href="#"><span>LinkedIn</span><span class="acg-contacto__valor">in/anyel-cgonzalez</span></a></li>
+			</ul>
+		</div>
+
+		<div class="acg-contacto__form">
+			<form class="acg-form" data-acg-form data-modo="whatsapp" data-whatsapp="https://wa.me/5516992193838" method="post" novalidate>
+				<div class="acg-form__fila">
+					<label class="acg-campo"><span class="acg-campo__label">Nombre *</span><input type="text" name="nombre" required></label>
+					<label class="acg-campo"><span class="acg-campo__label">Email *</span><input type="email" name="email" required></label>
+				</div>
+				<div class="acg-form__fila">
+					<label class="acg-campo"><span class="acg-campo__label">Teléfono</span><input type="tel" name="telefono"></label>
+					<label class="acg-campo"><span class="acg-campo__label">Fecha</span><input type="date" name="fecha"></label>
+				</div>
+				<label class="acg-campo"><span class="acg-campo__label">Servicio</span>
+					<select name="servicio"><option value="">Elige una opción</option><option>Bodas</option><option>Eventos</option><option>Marca personal</option><option>Otro</option></select>
+				</label>
+				<label class="acg-campo"><span class="acg-campo__label">Mensaje</span><textarea name="mensaje" rows="5"></textarea></label>
+				<label class="acg-campo acg-campo--check"><input type="checkbox" name="acepto" value="1" required><span>He leído y acepto la política de privacidad.</span></label>
+				<div class="acg-form__acciones">
+					<button type="submit" class="acg-btn acg-btn--acento">Enviar solicitud</button>
+					<a class="acg-form__wa" href="#"><svg class="acg-icono" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8 8 0 1 1 8 19.4z"/></svg>o escríbeme por WhatsApp</a>
+				</div>
+				<p class="acg-form__aviso" data-acg-aviso role="status" aria-live="polite"></p>
+			</form>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<footer class="acg-pie acg-esquema--claro">
+	<div class="acg-builder-row acg-builder-row--footer acg-builder-row--principal">
+		<div class="acg-builder-zone acg-builder-zone--izquierda">
+			<a class="acg-marca acg-marca--footer" href="#top">
+				<svg class="acg-monograma" viewBox="0 0 100 100" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="square" aria-hidden="true"><path d="M8 42V30L50 6l42 24v12"/><path d="M8 58v12l42 24 42-24V58"/></svg>
+				<span class="acg-marca__texto"><span class="acg-marca__nombre">ACG</span><span class="acg-marca__sub">ARTISTA VISUAL</span></span>
+			</a>
+			<p class="acg-pie__tagline">Fotografía de bodas, eventos y marca personal. Disponible para viajes.</p>
+		</div>
+		<div class="acg-builder-zone acg-builder-zone--centro">
+			<ul class="acg-contacto-info">
+				<li><span>+55 16 99219 3838</span></li>
+				<li><span>São Paulo · BR</span></li>
+			</ul>
+		</div>
+		<div class="acg-builder-zone acg-builder-zone--derecha">
+			<ul class="acg-redes">
+				<li><a href="#"><svg class="acg-icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span class="acg-redes__texto">Instagram</span></a></li>
+				<li><a href="#"><svg class="acg-icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4.5 9.5v10M4.5 5.2v.1M10 19.5v-10M10 13c0-2 1.4-3.5 3.4-3.5S17 11 17 13.4v6.1"/></svg><span class="acg-redes__texto">LinkedIn</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="acg-builder-row acg-builder-row--footer acg-builder-row--inferior">
+		<div class="acg-builder-zone acg-builder-zone--izquierda"><p class="acg-pie__copy">© 2026 ACG Artista Visual. Todos los derechos reservados.</p></div>
+		<div class="acg-builder-zone acg-builder-zone--centro"><nav class="acg-pie__legal"><ul class="acg-pie__legal-lista"><li><a href="#">Aviso legal</a></li><li><a href="#">Privacidad</a></li></ul></nav></div>
+		<div class="acg-builder-zone acg-builder-zone--derecha"><div class="acg-lang"><a class="acg-lang__btn is-active" href="#">ES</a><a class="acg-lang__btn" href="#">PT</a></div></div>
+	</div>
+</footer>
+
+<a class="acg-wa-flotante" href="https://wa.me/5516992193838" target="_blank" rel="noopener" aria-label="WhatsApp">
+	<svg class="acg-icono" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8 8 0 1 1 8 19.4z"/><path d="M8.8 9.2c.3 2.6 3.4 5.4 5.9 5.7.7.1 1.4-.6 1.5-1.3l-2-.9-1 1c-1-.5-2-1.4-2.5-2.5l1-1-.9-2c-.7.1-1.4.7-1.3 1.5z"/></svg>
+</a>
+
+<script>window.acgData = { ajaxUrl: '', nonce: '', lang: 'es', animaciones: true, lightbox: true, i18n: { enviando: 'Enviando…', enviar: 'Enviar solicitud', error: 'Error', ok: '¡Gracias!', waAbierto: 'Se ha abierto WhatsApp con tu mensaje. Si no se abrió, escríbeme directamente.', waSinNumero: 'No hay un número de WhatsApp configurado todavía.', cerrar: 'Cerrar' } };</script>
+<script src="assets/theme.js?v=1787610904025"></script>
+</body>
+</html>

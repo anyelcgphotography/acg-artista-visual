@@ -1,0 +1,37 @@
+/**
+ * Estilos del editor de bloques: acercan lo que se ve al escribir a lo que
+ * se publica. La paleta llega por variables desde inc/enqueue.php.
+ */
+
+.editor-styles-wrapper {
+	background: var(--acg-claro, #e1e1e1);
+	color: var(--acg-tinta, #000);
+	font-family: var(--acg-fuente-texto, system-ui, sans-serif);
+	font-size: 17px;
+	line-height: 1.75;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+	font-family: var(--acg-fuente-titulo, sans-serif);
+	font-weight: 700;
+	letter-spacing: -.03em;
+	line-height: 1.05;
+}
+
+.editor-styles-wrapper h1 { font-size: 44px; }
+.editor-styles-wrapper h2 { font-size: 34px; }
+.editor-styles-wrapper h3 { font-size: 24px; }
+
+.editor-styles-wrapper a {
+	color: var(--acg-acento, #fa6613);
+}
+
+.editor-styles-wrapper blockquote {
+	padding-left: 20px;
+	border-left: 2px solid var(--acg-acento, #fa6613);
+	font-family: var(--acg-fuente-titulo, sans-serif);
+	font-size: 1.2em;
+}

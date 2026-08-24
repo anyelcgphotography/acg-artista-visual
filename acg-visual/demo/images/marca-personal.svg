@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+	<defs>
+		<linearGradient id="cielo-marca-personal" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#151210"/>
+			<stop offset=".55" stop-color="#3a2b20"/>
+			<stop offset="1" stop-color="#9a6a3c"/>
+		</linearGradient>
+		<radialGradient id="sol-marca-personal" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#ffddb4" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#ffddb4" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-marca-personal" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-marca-personal">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1000" height="1250" fill="url(#cielo-marca-personal)"/>
+	<circle cx="360.0" cy="425.0" r="520.0" fill="url(#sol-marca-personal)"/>
+	<circle cx="360.0" cy="425.0" r="84.0" fill="#ffddb4" opacity=".85"/>
+	
+	
+	<rect y="1025.0" width="1000" height="225.0" fill="#0d0b09"/>
+	<g fill="#050505">
+				<circle cx="500.0" cy="576.5" r="149.5"/>
+				<path d="M201.0 1250
+					C215.9 741.0
+					 365.4 684.1
+					 500.0 684.1
+					C634.5 684.1
+					 784.0 741.0
+					 799.0 1250 Z"/>
+			</g>
+	<rect width="1000" height="1250" fill="url(#velo-marca-personal)"/>
+	<rect width="1000" height="1250" filter="url(#grano-marca-personal)" opacity=".05"/>
+</svg>

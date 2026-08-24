@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+	<defs>
+		<linearGradient id="cielo-retrato-natural" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#101512"/>
+			<stop offset=".55" stop-color="#22392c"/>
+			<stop offset="1" stop-color="#5f8a5c"/>
+		</linearGradient>
+		<radialGradient id="sol-retrato-natural" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#e8ffcf" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#e8ffcf" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-retrato-natural" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-retrato-natural">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1000" height="1250" fill="url(#cielo-retrato-natural)"/>
+	<circle cx="660.0" cy="375.0" r="312.0" fill="url(#sol-retrato-natural)"/>
+	<circle cx="660.0" cy="375.0" r="50.4" fill="#e8ffcf" opacity=".85"/>
+	
+	
+	<rect y="1025.0" width="1000" height="225.0" fill="#0a0d0b"/>
+	<g fill="#050505">
+				<circle cx="460.0" cy="598.9" r="142.0"/>
+				<path d="M175.9 1250
+					C190.2 755.2
+					 332.2 701.2
+					 460.0 701.2
+					C587.8 701.2
+					 729.8 755.2
+					 744.0 1250 Z"/>
+			</g>
+	<rect width="1000" height="1250" fill="url(#velo-retrato-natural)"/>
+	<rect width="1000" height="1250" filter="url(#grano-retrato-natural)" opacity=".05"/>
+</svg>

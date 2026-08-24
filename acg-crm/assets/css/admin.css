@@ -1,0 +1,141 @@
+/**
+ * Estilos del CRM en el panel. Solo se cargan en las pantallas del plugin y
+ * en el Escritorio, donde vive el widget.
+ */
+
+.acg-crm-estado {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--acg-estado, #8a8f98) 16%, transparent);
+	color: var(--acg-estado, #8a8f98);
+	border: 1px solid color-mix(in srgb, var(--acg-estado, #8a8f98) 40%, transparent);
+	font-size: 12px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.acg-crm-rejilla {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0 18px;
+}
+
+.acg-crm-nota {
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.acg-crm-historial {
+	margin: 0;
+	max-height: 380px;
+	overflow-y: auto;
+}
+
+.acg-crm-historial li {
+	padding: 12px 0;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.acg-crm-historial li:last-child {
+	border-bottom: none;
+}
+
+.acg-crm-historial__meta {
+	display: block;
+	margin-bottom: 3px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+	color: #787c82;
+}
+
+.acg-crm-atajos .button {
+	margin-bottom: 6px;
+}
+
+/* ------------------------------------------------- Widget del Escritorio. */
+
+.acg-crm-cifras {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin-bottom: 18px;
+	text-align: center;
+}
+
+.acg-crm-cifras strong {
+	display: block;
+	font-size: 26px;
+	line-height: 1.1;
+	color: #1d2327;
+}
+
+.acg-crm-cifras span {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	color: #787c82;
+}
+
+.acg-crm-embudo {
+	margin: 0 0 18px;
+}
+
+.acg-crm-embudo a {
+	display: grid;
+	grid-template-columns: 130px 1fr 32px;
+	align-items: center;
+	gap: 10px;
+	padding: 5px 0;
+	text-decoration: none;
+	color: inherit;
+	font-size: 13px;
+}
+
+.acg-crm-embudo__barra {
+	display: block;
+	height: 8px;
+	background: #f0f0f1;
+	border-radius: 999px;
+	overflow: hidden;
+}
+
+.acg-crm-embudo__barra span {
+	display: block;
+	height: 100%;
+	border-radius: 999px;
+}
+
+.acg-crm-embudo__num {
+	text-align: right;
+	font-weight: 600;
+}
+
+.acg-crm-ultimo li {
+	padding: 8px 0;
+	border-top: 1px solid #f0f0f1;
+	font-size: 13px;
+}
+
+.acg-crm-ultimo span {
+	display: block;
+	color: #50575e;
+}
+
+.acg-crm-ultimo em {
+	font-size: 11px;
+	color: #787c82;
+	font-style: normal;
+}
+
+.acg-crm-widget__pie {
+	margin: 16px 0 0;
+}
+
+@media (max-width: 782px) {
+	.acg-crm-embudo a {
+		grid-template-columns: 100px 1fr 28px;
+	}
+}

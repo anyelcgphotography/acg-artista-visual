@@ -1,0 +1,451 @@
+{
+	"version": "1.0.0",
+	"nombre": "ACG Artista Visual — contenido demo",
+	"medios": [
+		{ "archivo": "acg-hero.svg", "titulo": "Pareja al atardecer", "alt": "Silueta de una pareja recortada contra el sol al atardecer" },
+		{ "archivo": "boda-ceremonia.svg", "titulo": "Ceremonia al aire libre", "alt": "Ceremonia de boda al aire libre a última hora de la tarde" },
+		{ "archivo": "boda-detalle.svg", "titulo": "Ramo de novia", "alt": "Primer plano del ramo de la novia" },
+		{ "archivo": "evento-corporativo.svg", "titulo": "Evento corporativo", "alt": "Asistentes de un evento corporativo en un auditorio" },
+		{ "archivo": "evento-escenario.svg", "titulo": "Concierto", "alt": "Público frente a un escenario iluminado" },
+		{ "archivo": "marca-personal.svg", "titulo": "Retrato de marca personal", "alt": "Retrato a contraluz para marca personal" },
+		{ "archivo": "retrato-natural.svg", "titulo": "Retrato con luz natural", "alt": "Retrato con luz natural entre vegetación" },
+		{ "archivo": "servicio-bodas.svg", "titulo": "Servicio de bodas", "alt": "Pareja fotografiada al atardecer" },
+		{ "archivo": "servicio-eventos.svg", "titulo": "Servicio de eventos", "alt": "Grupo de personas en un evento" },
+		{ "archivo": "servicio-marca.svg", "titulo": "Servicio de marca personal", "alt": "Retrato profesional en estudio" },
+		{ "archivo": "retrato-angie.svg", "titulo": "Anyel C. González", "alt": "Anyel C. González con su cámara" }
+	],
+
+	"taxonomias": {
+		"acg_categoria": [
+			{ "nombre": "Bodas", "slug": "bodas", "nombre_pt": "Casamentos" },
+			{ "nombre": "Eventos", "slug": "eventos", "nombre_pt": "Eventos" },
+			{ "nombre": "Marca personal", "slug": "marca-personal", "nombre_pt": "Marca pessoal" },
+			{ "nombre": "Retrato", "slug": "retrato", "nombre_pt": "Retrato" }
+		]
+	},
+
+	"portafolio": [
+		{
+			"titulo": "Mariana y Tiago",
+			"slug": "mariana-y-tiago",
+			"orden": 1,
+			"imagen": "boda-ceremonia.svg",
+			"contenido": "Una boda de tarde en el campo, con la ceremonia justo cuando la luz empezaba a caer. Cobertura continua desde los preparativos hasta el final de la fiesta, sin posados más allá de las fotos de familia.",
+			"terminos": { "acg_categoria": [ "bodas" ] },
+			"campos": {
+				"titulo_pt": "Mariana e Tiago",
+				"texto_pt": "Um casamento de tarde no campo, com a cerimônia bem na hora em que a luz começava a cair. Cobertura contínua dos preparativos até o fim da festa, sem poses além das fotos de família.",
+				"formato": "apaisada",
+				"etiqueta": "BODA · 01",
+				"etiqueta_pt": "CASAMENTO · 01",
+				"cliente": "Mariana & Tiago",
+				"lugar": "Itu, SP",
+				"anio": "2025"
+			}
+		},
+		{
+			"titulo": "El ramo",
+			"slug": "el-ramo",
+			"orden": 2,
+			"imagen": "boda-detalle.svg",
+			"contenido": "Los detalles de la mañana: el ramo, los anillos, el vestido colgado en la ventana. Se fotografían antes de que empiece el día, cuando todavía hay calma.",
+			"terminos": { "acg_categoria": [ "bodas" ] },
+			"campos": {
+				"titulo_pt": "O buquê",
+				"texto_pt": "Os detalhes da manhã: o buquê, as alianças, o vestido pendurado na janela. São fotografados antes do dia começar, quando ainda há calma.",
+				"formato": "vertical",
+				"etiqueta": "BODA · 02",
+				"etiqueta_pt": "CASAMENTO · 02",
+				"lugar": "São Paulo, SP",
+				"anio": "2025"
+			}
+		},
+		{
+			"titulo": "Encuentro anual Estúdio Norte",
+			"slug": "estudio-norte",
+			"orden": 3,
+			"imagen": "evento-corporativo.svg",
+			"contenido": "Jornada corporativa de un día: ponencias, coffee breaks y retratos rápidos de los ponentes. El material se entregó en 48 h para que pudieran usarlo en prensa esa misma semana.",
+			"terminos": { "acg_categoria": [ "eventos" ] },
+			"campos": {
+				"titulo_pt": "Encontro anual Estúdio Norte",
+				"texto_pt": "Jornada corporativa de um dia: palestras, coffee breaks e retratos rápidos dos palestrantes. O material foi entregue em 48 h para uso na imprensa na mesma semana.",
+				"formato": "vertical",
+				"etiqueta": "EVENTO · 01",
+				"cliente": "Estúdio Norte",
+				"lugar": "São Paulo, SP",
+				"anio": "2025"
+			}
+		},
+		{
+			"titulo": "Carla R.",
+			"slug": "carla-r",
+			"orden": 4,
+			"imagen": "marca-personal.svg",
+			"contenido": "Sesión de marca personal de dos horas en su propio espacio de trabajo. Tres cambios de ropa y encuadres pensados para web, LinkedIn y redes, en horizontal y en vertical.",
+			"terminos": { "acg_categoria": [ "marca-personal" ] },
+			"campos": {
+				"titulo_pt": "Carla R.",
+				"texto_pt": "Sessão de marca pessoal de duas horas no próprio espaço de trabalho. Três trocas de roupa e enquadramentos pensados para site, LinkedIn e redes, na horizontal e na vertical.",
+				"formato": "vertical",
+				"etiqueta": "MARCA PERSONAL · 01",
+				"etiqueta_pt": "MARCA PESSOAL · 01",
+				"cliente": "Carla R.",
+				"anio": "2025"
+			}
+		},
+		{
+			"titulo": "Festival de verano",
+			"slug": "festival-de-verano",
+			"orden": 5,
+			"imagen": "evento-escenario.svg",
+			"contenido": "Cobertura de las tres jornadas del festival: escenario, público y backstage. Entrega diaria de una selección para redes mientras el festival seguía en marcha.",
+			"terminos": { "acg_categoria": [ "eventos" ] },
+			"campos": {
+				"titulo_pt": "Festival de verão",
+				"texto_pt": "Cobertura dos três dias do festival: palco, público e bastidores. Entrega diária de uma seleção para redes enquanto o festival ainda acontecia.",
+				"formato": "apaisada",
+				"etiqueta": "EVENTO · 02",
+				"lugar": "Ribeirão Preto, SP",
+				"anio": "2024"
+			}
+		},
+		{
+			"titulo": "Luz de la tarde",
+			"slug": "luz-de-la-tarde",
+			"orden": 6,
+			"imagen": "retrato-natural.svg",
+			"contenido": "Retrato con luz natural, sin flash y sin estudio. Una hora de paseo, conversación y unas cuantas fotos por el camino.",
+			"terminos": { "acg_categoria": [ "retrato" ] },
+			"campos": {
+				"titulo_pt": "Luz da tarde",
+				"texto_pt": "Retrato com luz natural, sem flash e sem estúdio. Uma hora de caminhada, conversa e algumas fotos pelo caminho.",
+				"formato": "vertical",
+				"etiqueta": "RETRATO · 01",
+				"anio": "2025"
+			}
+		}
+	],
+
+	"servicios": [
+		{
+			"titulo": "Bodas",
+			"slug": "bodas",
+			"orden": 1,
+			"imagen": "servicio-bodas.svg",
+			"contenido": "Preparativos, ceremonia y fiesta. Cobertura continua con flash disponible para el interior y la noche.\n\nAntes del día hablamos del sitio, de los horarios y de qué momentos no te puedes perder. El día de la boda no dirijo nada más que las fotos de familia: el resto se fotografía según pasa.\n\nLa entrega es una galería online con descarga en alta resolución y sin marca de agua.",
+			"campos": {
+				"titulo_pt": "Casamentos",
+				"texto_pt": "Preparativos, cerimônia e festa. Cobertura contínua com flash disponível para interiores e para a noite.\n\nAntes do dia conversamos sobre o local, os horários e quais momentos não podem faltar. No dia do casamento eu não dirijo nada além das fotos de família: o resto é fotografado conforme acontece.\n\nA entrega é uma galeria online com download em alta resolução e sem marca d'água.",
+				"nota": "PRESUPUESTO A MEDIDA",
+				"nota_pt": "ORÇAMENTO SOB MEDIDA",
+				"destacado": "1"
+			}
+		},
+		{
+			"titulo": "Eventos",
+			"slug": "eventos",
+			"orden": 2,
+			"imagen": "servicio-eventos.svg",
+			"contenido": "Corporativos, culturales y deportivos. Registro de momentos, retratos rápidos y material listo para prensa o redes.\n\nSe contrata por horas o por jornada completa. Si el evento dura varios días, se puede entregar una selección al final de cada uno para publicar mientras sigue en marcha.",
+			"campos": {
+				"titulo_pt": "Eventos",
+				"texto_pt": "Corporativos, culturais e esportivos. Registro de momentos, retratos rápidos e material pronto para imprensa ou redes.\n\nContrata-se por hora ou por diária. Se o evento dura vários dias, dá para entregar uma seleção ao final de cada um para publicar enquanto ele ainda acontece.",
+				"nota": "POR HORAS O JORNADA",
+				"nota_pt": "POR HORA OU DIÁRIA",
+				"destacado": "1"
+			}
+		},
+		{
+			"titulo": "Marca personal",
+			"slug": "marca-personal",
+			"orden": 3,
+			"imagen": "servicio-marca.svg",
+			"contenido": "Retratos y escenas de trabajo para perfiles profesionales, webs y campañas. Varios encuadres y formatos por sesión.\n\nLa sesión dura entre una y tres horas, en tu espacio de trabajo o en exterior. Salen fotos en horizontal y en vertical, pensadas para que sirvan igual en una web que en un perfil de redes.",
+			"campos": {
+				"titulo_pt": "Marca pessoal",
+				"texto_pt": "Retratos e cenas de trabalho para perfis profissionais, sites e campanhas. Vários enquadramentos e formatos por sessão.\n\nA sessão dura de uma a três horas, no seu espaço de trabalho ou em ambiente externo. Saem fotos na horizontal e na vertical, pensadas para servir tanto num site quanto num perfil de redes.",
+				"nota": "SESIÓN DE 1 A 3 H",
+				"nota_pt": "SESSÃO DE 1 A 3 H",
+				"destacado": "1"
+			}
+		},
+		{
+			"titulo": "Fotografía de productos",
+			"slug": "fotografia-de-productos",
+			"orden": 4,
+			"contenido": "Producto sobre fondo limpio o en contexto de uso, para tienda online y catálogo. Se acuerda el número de tomas por producto antes de empezar.",
+			"campos": {
+				"titulo_pt": "Fotografia de produtos",
+				"texto_pt": "Produto sobre fundo limpo ou em contexto de uso, para loja online e catálogo. O número de tomadas por produto é combinado antes de começar.",
+				"nota": "POR ENCARGO",
+				"nota_pt": "SOB ENCOMENDA",
+				"destacado": "0"
+			}
+		},
+		{
+			"titulo": "Fotografía de mascotas",
+			"slug": "fotografia-de-mascotas",
+			"orden": 5,
+			"contenido": "Sesión en casa o en exterior, al ritmo del animal. Sin flash directo y con la sesión partida en tramos cortos.",
+			"campos": {
+				"titulo_pt": "Fotografia de pets",
+				"texto_pt": "Sessão em casa ou ao ar livre, no ritmo do animal. Sem flash direto e com a sessão dividida em blocos curtos.",
+				"nota": "POR ENCARGO",
+				"nota_pt": "SOB ENCOMENDA",
+				"destacado": "0"
+			}
+		}
+	],
+
+	"proceso": [
+		{
+			"titulo": "Conversación",
+			"slug": "conversacion",
+			"orden": 1,
+			"contenido": "Me cuentas fecha, lugar y qué esperas de las fotos.",
+			"campos": { "titulo_pt": "Conversa", "texto_pt": "Você me conta a data, o local e o que espera das fotos.", "numero": "01" }
+		},
+		{
+			"titulo": "Propuesta",
+			"slug": "propuesta",
+			"orden": 2,
+			"contenido": "Horas de cobertura, entregables y precio cerrado por escrito.",
+			"campos": { "titulo_pt": "Proposta", "texto_pt": "Horas de cobertura, entregáveis e preço fechado por escrito.", "numero": "02" }
+		},
+		{
+			"titulo": "Sesión",
+			"slug": "sesion",
+			"orden": 3,
+			"contenido": "El día del trabajo. Poca dirección, mucha observación.",
+			"campos": { "titulo_pt": "Sessão", "texto_pt": "O dia do trabalho. Pouca direção, muita observação.", "numero": "03" }
+		},
+		{
+			"titulo": "Entrega",
+			"slug": "entrega",
+			"orden": 4,
+			"contenido": "Selección editada en galería online, con descarga en alta.",
+			"campos": { "titulo_pt": "Entrega", "texto_pt": "Seleção editada em galeria online, com download em alta.", "numero": "04" }
+		}
+	],
+
+	"testimonios": [
+		{
+			"titulo": "Mariana y Tiago",
+			"slug": "testimonio-mariana-tiago",
+			"orden": 1,
+			"contenido": "Estuvo todo el día y casi no la notamos. Las fotos parecen recuerdos, no poses.",
+			"campos": {
+				"fuente": "manual",
+				"valoracion": "5",
+				"texto_pt": "Ficou o dia inteiro e quase não a notamos. As fotos parecem lembranças, não poses.",
+				"autor": "MARIANA & TIAGO",
+				"tipo": "BODA",
+				"tipo_pt": "CASAMENTO"
+			}
+		},
+		{
+			"titulo": "Estúdio Norte",
+			"slug": "testimonio-estudio-norte",
+			"orden": 2,
+			"contenido": "Entregó el material a tiempo y con el encuadre que necesitábamos para prensa.",
+			"campos": {
+				"fuente": "google",
+				"valoracion": "5",
+				"url": "https://www.google.com/maps",
+				"texto_pt": "Entregou o material no prazo e com o enquadramento que precisávamos para a imprensa.",
+				"autor": "ESTÚDIO NORTE",
+				"tipo": "EVENTO CORPORATIVO",
+				"tipo_pt": "EVENTO CORPORATIVO"
+			}
+		},
+		{
+			"titulo": "Carla R.",
+			"slug": "testimonio-carla",
+			"orden": 3,
+			"contenido": "Usé los retratos en mi web y en LinkedIn. Cambió por completo cómo me presento.",
+			"campos": {
+				"fuente": "manual",
+				"valoracion": "5",
+				"texto_pt": "Usei os retratos no meu site e no LinkedIn. Mudou completamente como me apresento.",
+				"autor": "CARLA R.",
+				"tipo": "MARCA PERSONAL",
+				"tipo_pt": "MARCA PESSOAL"
+			}
+		}
+	],
+
+	"equipo": [
+		{ "titulo": "Nikon D3300", "slug": "nikon-d3300", "orden": 1, "campos": { "grupo": "cuerpo", "titulo_pt": "Nikon D3300" } },
+		{ "titulo": "Flash Godox V860II-N", "slug": "godox-v860ii-n", "orden": 2, "campos": { "grupo": "cuerpo", "titulo_pt": "Flash Godox V860II-N" } },
+		{ "titulo": "Lente 18-55 mm", "slug": "lente-18-55", "orden": 3, "campos": { "grupo": "optica", "titulo_pt": "Lente 18-55 mm" } },
+		{ "titulo": "Lente 70-300 mm", "slug": "lente-70-300", "orden": 4, "campos": { "grupo": "optica", "titulo_pt": "Lente 70-300 mm" } }
+	],
+
+	"faq": [
+		{
+			"titulo": "¿Cuánto tarda la entrega?",
+			"slug": "faq-entrega",
+			"orden": 1,
+			"contenido": "Un adelanto en 72 h y la galería completa entre 10 y 20 días según el tamaño del trabajo.",
+			"campos": {
+				"titulo_pt": "Quanto tempo leva a entrega?",
+				"texto_pt": "Uma prévia em 72 h e a galeria completa entre 10 e 20 dias, conforme o tamanho do trabalho."
+			}
+		},
+		{
+			"titulo": "¿Viajas fuera de la ciudad?",
+			"slug": "faq-viajes",
+			"orden": 2,
+			"contenido": "Sí. El desplazamiento se suma al presupuesto y se acuerda antes de reservar la fecha.",
+			"campos": {
+				"titulo_pt": "Você viaja para fora da cidade?",
+				"texto_pt": "Sim. O deslocamento entra no orçamento e é combinado antes de reservar a data."
+			}
+		},
+		{
+			"titulo": "¿Cómo se reserva la fecha?",
+			"slug": "faq-reserva",
+			"orden": 3,
+			"contenido": "Con una señal sobre el total. Hasta ese momento la fecha sigue abierta para otros clientes.",
+			"campos": {
+				"titulo_pt": "Como reservo a data?",
+				"texto_pt": "Com um sinal sobre o total. Até então a data segue aberta para outros clientes."
+			}
+		},
+		{
+			"titulo": "¿Las fotos llevan marca de agua?",
+			"slug": "faq-marca-agua",
+			"orden": 4,
+			"contenido": "Las de la galería online sí. Los archivos finales que recibes van limpios y en alta resolución.",
+			"campos": {
+				"titulo_pt": "As fotos têm marca d'água?",
+				"texto_pt": "As da galeria online sim. Os arquivos finais que você recebe vão limpos e em alta resolução."
+			}
+		}
+	],
+
+	"paginas": {
+		"portada": {
+			"titulo": "Inicio",
+			"slug": "inicio",
+			"contenido": "",
+			"campos": {
+				"hero_epigrafe": "ANYEL C. GONZÁLEZ · ARTISTA VISUAL",
+				"hero_epigrafe_pt": "ANYEL C. GONZÁLEZ · ARTISTA VISUAL",
+				"hero_titulo": "Bodas y eventos, fotografiados sin interrumpirlos.",
+				"hero_titulo_pt": "Casamentos e eventos, fotografados sem interrompê-los.",
+				"hero_texto": "Cobertura documental de bodas, eventos y marca personal. Retrato, producto y naturaleza por encargo.",
+				"hero_texto_pt": "Cobertura documental de casamentos, eventos e marca pessoal. Retrato, produto e natureza sob encomenda.",
+				"hero_boton_1": "Pedir presupuesto",
+				"hero_boton_1_pt": "Pedir orçamento",
+				"hero_boton_1_url": "#contacto",
+				"hero_boton_2": "Ver portafolio",
+				"hero_boton_2_pt": "Ver portfólio",
+				"hero_boton_2_url": "#portafolio",
+				"hero_imagen": "@acg-hero.svg",
+				"hero_pie_equipo": "NIKON D3300 · GODOX V860II-N · 18-55 / 70-300 MM",
+				"hero_pie_equipo_pt": "NIKON D3300 · GODOX V860II-N · 18-55 / 70-300 MM",
+				"hero_pie_estado": "AGENDA ABIERTA",
+				"hero_pie_estado_pt": "AGENDA ABERTA",
+
+				"marquesina_texto": "BODAS · EVENTOS · MARCA PERSONAL · RETRATO · PRODUCTO · NATURALEZA · MASCOTAS · DEPORTE · STOCK",
+				"marquesina_texto_pt": "CASAMENTOS · EVENTOS · MARCA PESSOAL · RETRATO · PRODUTO · NATUREZA · PETS · ESPORTE · STOCK",
+
+				"portafolio_epigrafe": "PORTAFOLIO",
+				"portafolio_epigrafe_pt": "PORTFÓLIO",
+				"portafolio_titulo": "Trabajo reciente",
+				"portafolio_titulo_pt": "Trabalho recente",
+				"portafolio_texto": "Cada entrega se edita en un mismo tono: color fiel, contraste medido, nada de filtros que caduquen.",
+				"portafolio_texto_pt": "Cada entrega é editada no mesmo tom: cor fiel, contraste medido, sem filtros que envelheçam.",
+				"portafolio_columnas": "3",
+				"portafolio_limite": "6",
+				"portafolio_filtros": "1",
+
+				"servicios_epigrafe": "SERVICIOS",
+				"servicios_epigrafe_pt": "SERVIÇOS",
+				"servicios_titulo": "Tres coberturas principales",
+				"servicios_titulo_pt": "Três coberturas principais",
+				"servicios_lista_titulo": "TAMBIÉN POR ENCARGO",
+				"servicios_lista_titulo_pt": "TAMBÉM SOB ENCOMENDA",
+				"servicios_lista": "Retratos fotográficos\nFotografía de productos\nFotografía de deportes\nFotografía de naturaleza\nFotografía de stock\nFotografía de restaurantes\nPrimeros planos / macro\nFotografía de mascotas",
+				"servicios_lista_pt": "Retratos fotográficos\nFotografia de produtos\nFotografia esportiva\nFotografia de natureza\nFotografia de stock\nFotografia de restaurantes\nClose-ups / macro\nFotografia de pets",
+
+				"sobre_epigrafe": "SOBRE MÍ",
+				"sobre_epigrafe_pt": "SOBRE MIM",
+				"sobre_titulo": "Anyel C. González",
+				"sobre_titulo_pt": "Anyel C. González",
+				"sobre_texto": "Soy fotógrafa y artista visual. Trabajo sobre todo con bodas, eventos y marca personal, y me interesa el registro honesto: gente cómoda, luz real, poca dirección.\n\nCubro también producto, naturaleza, mascotas y deporte cuando el encargo lo pide. Antes de cada trabajo hablamos del lugar, la luz y el ritmo del día.",
+				"sobre_texto_pt": "Sou fotógrafa e artista visual. Trabalho principalmente com casamentos, eventos e marca pessoal, e me interessa o registro honesto: pessoas confortáveis, luz real, pouca direção.\n\nTambém cubro produto, natureza, pets e esporte quando o trabalho pede. Antes de cada projeto conversamos sobre o local, a luz e o ritmo do dia.",
+				"sobre_imagen": "@retrato-angie.svg",
+
+				"proceso_epigrafe": "PROCESO",
+				"proceso_epigrafe_pt": "PROCESSO",
+				"proceso_titulo": "Cómo trabajamos",
+				"proceso_titulo_pt": "Como trabalhamos",
+
+				"testimonios_epigrafe": "CLIENTES",
+				"testimonios_epigrafe_pt": "CLIENTES",
+
+				"equipo_titulo": "Equipo de trabajo",
+				"equipo_titulo_pt": "Equipamento de trabalho",
+
+				"faq_epigrafe": "PREGUNTAS FRECUENTES",
+				"faq_epigrafe_pt": "PERGUNTAS FREQUENTES",
+				"faq_titulo": "Antes de escribir",
+				"faq_titulo_pt": "Antes de escrever",
+
+				"contacto_epigrafe": "CONTACTO",
+				"contacto_epigrafe_pt": "CONTATO",
+				"contacto_titulo": "Cuéntame tu fecha",
+				"contacto_titulo_pt": "Me conte sua data",
+				"contacto_texto": "Respondo en menos de 24 h con disponibilidad y presupuesto. Si prefieres, escríbeme directo por WhatsApp.",
+				"contacto_texto_pt": "Respondo em menos de 24 h com disponibilidade e orçamento. Se preferir, me escreva direto pelo WhatsApp."
+			}
+		},
+		"privacidad": {
+			"titulo": "Política de privacidad",
+			"slug": "politica-de-privacidad",
+			"contenido": "<h2>Quién trata tus datos</h2><p>Los datos que envías por el formulario de contacto los trata Anyel C. González con el único fin de responder a tu solicitud y, si contratas, gestionar el encargo.</p><h2>Qué datos se guardan</h2><p>Nombre, email, teléfono si lo indicas, el servicio y la fecha que te interesan y el mensaje que escribas. Se guarda también la fecha de tu consentimiento y una versión cifrada de tu dirección IP, que sirve para frenar el envío automatizado de formularios y no permite identificarte.</p><h2>Cuánto tiempo</h2><p>Mientras dure la conversación y, si hay contrato, durante los plazos que exija la ley. Puedes pedir que se borren en cualquier momento.</p><h2>Tus derechos</h2><p>Puedes pedir acceso, rectificación, supresión, limitación, portabilidad y oposición escribiendo a la dirección de contacto que aparece en esta web.</p><p><em>Este texto es una base de trabajo: revísalo y complétalo con los datos fiscales del titular antes de publicar el sitio.</em></p>",
+			"campos": {
+				"titulo_pt": "Política de privacidade",
+				"texto_pt": "<h2>Quem trata seus dados</h2><p>Os dados enviados pelo formulário de contato são tratados por Anyel C. González com a única finalidade de responder ao seu pedido e, em caso de contratação, gerir o trabalho.</p><p><em>Este texto é uma base de trabalho: revise e complete com os dados do responsável antes de publicar o site.</em></p>"
+			}
+		},
+		"aviso-legal": {
+			"titulo": "Aviso legal",
+			"slug": "aviso-legal",
+			"contenido": "<h2>Titular del sitio</h2><p>Anyel C. González — fotografía y dirección visual. Los datos fiscales completos deben añadirse antes de publicar el sitio.</p><h2>Propiedad intelectual</h2><p>Todas las fotografías de esta web son obra de la autora y están protegidas por derechos de autor. No se pueden reproducir, distribuir ni usar con fines comerciales sin autorización escrita.</p><h2>Condiciones de uso</h2><p>El acceso a esta web es gratuito y no exige registro. La información sobre servicios y plazos es orientativa: las condiciones de cada encargo se fijan por escrito en el presupuesto.</p>",
+			"campos": {
+				"titulo_pt": "Aviso legal",
+				"texto_pt": "<h2>Titular do site</h2><p>Anyel C. González — fotografia e direção visual. Os dados fiscais completos devem ser adicionados antes de publicar o site.</p><h2>Propriedade intelectual</h2><p>Todas as fotografias deste site são obra da autora e estão protegidas por direitos autorais.</p>"
+			}
+		}
+	},
+
+	"opciones": {
+		"blogname": "ACG",
+		"blogdescription": "Fotografía de bodas, eventos y marca personal. Disponible para viajes.",
+		"acg_color_acento": "#fa6613",
+		"acg_color_oscuro": "#0a0a0a",
+		"acg_color_claro": "#e1e1e1",
+		"acg_color_tinta": "#000000",
+		"acg_color_superficie": "#111111",
+		"acg_idioma_defecto": "es",
+		"acg_idioma_switcher": true,
+		"acg_whatsapp": "5516992193838",
+		"acg_telefono": "+55 16 99219 3838",
+		"acg_ciudad": "São Paulo · BR",
+		"acg_marca_subtitulo": "ARTISTA VISUAL",
+		"acg_marca_subtitulo_pt": "ARTISTA VISUAL",
+		"acg_cta_texto": "WhatsApp",
+		"acg_cta_texto_pt": "WhatsApp",
+		"acg_social_instagram": "https://www.instagram.com/anyelcg_photography",
+		"acg_social_linkedin": "https://www.linkedin.com/in/anyel-cgonzalez",
+		"acg_cabecera_fija": true,
+		"acg_animaciones": true,
+		"acg_lightbox": true,
+		"acg_google_fonts": true,
+		"acg_pie_esquema": "claro"
+	}
+}

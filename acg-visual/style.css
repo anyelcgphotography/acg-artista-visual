@@ -1,0 +1,17 @@
+/*
+Theme Name:  ACG Artista Visual
+Theme URI:   https://anyelcgonzalez.com
+Author:      Adry Digital
+Author URI:  https://adrydigital.com
+Description: Theme para fotógrafa y artista visual: portafolio filtrable, servicios, proceso, testimonios y captación de clientes. Bilingüe español/portugués sin plugins, diseñador de cabecera y pie desde el Personalizador, colores de fondo configurables y contenido 100 % editable con la versión gratuita de Advanced Custom Fields. Pensado para funcionar junto al plugin ACG CRM.
+Version:     1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License:     GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: acg-visual
+Tags:        photography, portfolio, one-column, custom-colors, custom-menu, custom-logo, translation-ready, block-styles, wide-blocks
+*/
+
+/* El CSS real vive en assets/css/theme.css; este archivo solo declara el theme. */

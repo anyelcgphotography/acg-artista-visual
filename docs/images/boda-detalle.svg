@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img">
+	<defs>
+		<linearGradient id="cielo-boda-detalle" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#0e0e0e"/>
+			<stop offset=".55" stop-color="#2a2018"/>
+			<stop offset="1" stop-color="#7a4a24"/>
+		</linearGradient>
+		<radialGradient id="sol-boda-detalle" cx="50%" cy="50%" r="50%">
+			<stop offset="0" stop-color="#ffcf9a" stop-opacity=".95"/>
+			<stop offset="1" stop-color="#ffcf9a" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="velo-boda-detalle" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#000" stop-opacity=".45"/>
+			<stop offset=".45" stop-color="#000" stop-opacity="0"/>
+			<stop offset="1" stop-color="#000" stop-opacity=".5"/>
+		</linearGradient>
+		<filter id="grano-boda-detalle">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/>
+			<feColorMatrix type="saturate" values="0"/>
+		</filter>
+	</defs>
+
+	<rect width="1000" height="1250" fill="url(#cielo-boda-detalle)"/>
+	<circle cx="500.0" cy="450.0" r="416.0" fill="url(#sol-boda-detalle)"/>
+	<circle cx="500.0" cy="450.0" r="67.2" fill="#ffcf9a" opacity=".85"/>
+	
+	
+	<rect y="1025.0" width="1000" height="225.0" fill="#0b0b0b"/>
+	<g>
+				<path d="M471.3 852.5 L431.0 1250 M528.8 852.5 L580.5 1250" stroke="#1d1a15" stroke-width="28.8" fill="none"/>
+				<circle cx="672.5" cy="852.5" r="63.3" fill="#fa6613" opacity=".7"/><circle cx="632.1" cy="933.8" r="63.3" fill="#f0e2d2" opacity=".9"/><circle cx="530.0" cy="977.1" r="63.3" fill="#f0e2d2" opacity=".7"/><circle cx="413.8" cy="962.1" r="63.3" fill="#fa6613" opacity=".9"/><circle cx="337.9" cy="895.8" r="63.3" fill="#f0e2d2" opacity=".7"/><circle cx="337.9" cy="809.2" r="63.3" fill="#f0e2d2" opacity=".9"/><circle cx="413.7" cy="742.9" r="63.3" fill="#fa6613" opacity=".7"/><circle cx="530.0" cy="727.9" r="63.3" fill="#f0e2d2" opacity=".9"/><circle cx="632.1" cy="771.2" r="63.3" fill="#f0e2d2" opacity=".7"/>
+			</g>
+	<rect width="1000" height="1250" fill="url(#velo-boda-detalle)"/>
+	<rect width="1000" height="1250" filter="url(#grano-boda-detalle)" opacity=".05"/>
+</svg>
